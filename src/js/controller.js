@@ -10,7 +10,7 @@ export default class Controller {
         .then(list => this.view.drawFavorites(list));
     }
     removeItem() {
-        this.model.removeItem();
+        this.model.removeItem(this.view.cardForDeleteUrl);
     }
     loadPage() {
         document.addEventListener("DOMContentLoaded", this.view.drawFavorites(this.model.urlList));

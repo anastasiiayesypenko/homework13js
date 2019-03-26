@@ -19,7 +19,11 @@ export default class Model {
     };
     removeItem(cardUrl) {
         let indexOfDeletedUrl = this.urlList.indexOf(this.urlList.find(el => el.url === cardUrl));
+        console.log(this.urlList);
         this.urlList.splice([indexOfDeletedUrl], 1);
+        console.log(this.urlList);
+        console.log(indexOfDeletedUrl);
+        console.log(cardUrl);
         this.setUrlToLocalStorage(this.urlList);
     };
     setUrlToLocalStorage(array) {

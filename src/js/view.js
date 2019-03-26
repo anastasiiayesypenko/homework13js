@@ -9,6 +9,7 @@ export default class View extends EventEmitter{
         this.cardSection = document.querySelector('.favorites-wrapper');
         this.form.addEventListener('submit', this.onUrlAdding.bind(this));
         this.cardSection.addEventListener('click', this.onDeleteClick.bind(this));
+        this.cardForDeleteUrl;
     }
     onUrlAdding(event) {
         event.preventDefault();
@@ -26,8 +27,8 @@ export default class View extends EventEmitter{
     onDeleteClick(event) {
         if (event.target.nodeName === "BUTTON") {
             let cardForDelete = event.target.parentNode;
-            let cardForDeleteUrl = cardForDelete.querySelector('.favorites-card__url').textContent;
-            this.emit('remove', cardForDeleteUrl);
+            this.cardForDeleteUrl = cardForDelete.querySelector('.favorites-card__url').textContent;
+            this.emit('remove', this.cardForDeleteUrl);
             cardForDelete.remove()
         };
     }
