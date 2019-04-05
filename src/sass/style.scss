@@ -31,6 +31,9 @@ body {
         }
     }
 }
+.favorites-wrapper {
+    margin-bottom: 50px;
+}
 .favorites-card {
     margin: 0 auto;
     display: flex;
@@ -38,7 +41,7 @@ body {
     flex-direction: column;
     padding: 10px;
     min-height: 100px;
-    margin-top: 30px;
+    margin-top: 30px; 
     width: 450px;
     word-wrap: break-word;
     &__url {
