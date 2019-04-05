@@ -1,4 +1,5 @@
 'use strict'
+import '../sass/style.scss';
 import Model from './model';
 import View from './view.js';
 import Controller from './controller.js';

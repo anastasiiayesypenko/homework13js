@@ -4,17 +4,17 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --verbose --coverage",
     "build": "webpack --mode production --colors --progress",
     "start": "webpack-dev-server --mode development --hot --colors --progress"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.4.3",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.0.0",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0",
-    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-env": "^7.4.3",
     "autoprefixer": "^9.1.5",
     "babel-loader": "^8.0.2",
     "css-loader": "^1.0.0",
@@ -23,6 +23,7 @@
     "html-loader": "^0.5.5",
     "html-webpack-plugin": "^3.0.6",
     "image-webpack-loader": "^4.3.1",
+    "jest": "^24.7.0",
     "mini-css-extract-plugin": "^0.4.2",
     "node-sass": "^4.9.3",
     "postcss-loader": "^3.0.0",
@@ -36,6 +37,7 @@
     "yargs": "^12.0.2"
   },
   "dependencies": {
+    "babel-jest": "^24.7.0",
     "babel-polyfill": "^6.26.0",
     "lodash": "^4.17.10",
     "moment": "^2.24.0"

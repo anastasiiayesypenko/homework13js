@@ -8,15 +8,12 @@
 </head>
 <body>
     <form class="url-form">
-      <input type="text" class="url-form__input" required />
+      <input type="text" class="url-form__input" autofocus required />
       <button type="submit" class="url-form__button">Добавить</button>
     </form>
     <div class="favorites-wrapper"></div>
     <template id="favorites-template">
       <section class="favorites-card">
-        <p>{{ title }}</p>
-        <p>{{ description }}</p>
-        <img class="favorites-card__img" src="{{ image }}" alt="" />
         <a href="{{ url }}" class="favorites-card__url">{{ url }}</a>
         <button class="favorites-card__delete">Удалить</button>
       </section>

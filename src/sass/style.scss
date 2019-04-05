@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #6091c289;
+}
+.url-form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    justify-content: flex-start;
+    background: #fff;
+    &__input {
+        height: 35px;
+        border: none;
+        font-size: 20px;
+        background-color: #d3dbeee5;
+    }
+    &__button {
+        height: 30px;
+        font-weight: bold;
+        color: rgb(209,209,217);
+        text-decoration: none;
+        border: none;
+        background: #b486b4;
+        &:hover {
+            background: #576898;
+        }
+    }
+}
+.favorites-card {
+    margin: 0 auto;
+    display: flex;
+    background: #6091c289;
+    flex-direction: column;
+    padding: 10px;
+    min-height: 100px;
+    margin-top: 30px;
+    width: 450px;
+    word-wrap: break-word;
+    &__url {
+        padding: 15px;
+        font-size: 20px;
+        color: rgb(68, 5, 63);
+    }
+    &__delete {
+        margin: 0 auto;
+        margin-top: 10px;
+        outline: none;
+        width: 150px;
+        display: inline-block;
+        font-size: 90%;
+        font-weight: 700;
+        color: rgb(209,209,217);
+        text-decoration: none;
+        padding: .5em 1em;
+        border-radius: 3px;
+        background: linear-gradient(rgba(204, 138, 218, 0.404), rgb(176, 163, 177)) rgb(148, 110, 121);
+        box-shadow:
+         0 1px rgba(255,255,255,.2) inset,
+         0 3px 5px rgba(0,1,6,.5),
+         0 0 1px 1px rgba(0,1,6,.2);
+        &:hover {
+            background: linear-gradient(rgb(216, 188, 212), rgb(197, 192, 192)) rgb(146, 111, 137);
+            color: #546789;
+        }
+    }
+    &:hover {
+        box-shadow: #546789
+    }
+}
